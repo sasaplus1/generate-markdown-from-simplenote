@@ -131,4 +131,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+### sasaplus1/generate-markdown-from-simplenote
 
+/notes
