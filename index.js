@@ -23,7 +23,8 @@ async function createMarkdown(params, prefix = '') {
 
   const text = [
     '---',
-    `title: '${content.split(/\r\n/).filter(Boolean)[0] || ''}'`,
+    'title: |-',
+    `  ${content.split(/\r\n/).filter(Boolean)[0] || ''}`,
     `created: '${created.toISOString().replace('T', ' ').replace(/\.\d{3}Z$/, '')}'`,
     `updated: '${updated.toISOString().replace('T', ' ').replace(/\.\d{3}Z$/, '')}'`,
     '---',
