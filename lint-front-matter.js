@@ -3,7 +3,7 @@ const fs = require('fs');
 const fm = require('front-matter');
 const glob = require('glob');
 
-const files = glob.sync('./**/*.md');
+const files = glob.sync('./dists/**/*.md');
 
 for (const file of files) {
   try {
